@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+        crossorigin="anonymous"
+    />
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    Crud partículas
+                </a>  
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="crud-conteiner">
+            <div class="crud-header">
+                <h1>Partículas</h1>
+                <button class="button is-danger" id="openRegisterModal">
+                    <i class="fas fa-plus"></i>
+                    <span>Nueva partícula</span>
+                </button>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Partícula</th>
+                    <th>Carga eléctrica</th>
+                    <th>Masa</th>
+                    <th>Spin</th>
+                    <th>Vida media</th>
+                    <th>Opciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Electrón</td>
+                    <td>-1</td>
+                    <td>0.5110</td>
+                    <td>1/2</td>
+                    <td>Estable</td>
+                    <td>
+                        <button class="button is-info is-rounded">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button class="button is-danger is-rounded">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </td>
+                </tr> 
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Registrar nueva partícula</p>
+                <button class="delete" aria-label="close" id="closeRegisterModal"></button>
+            </header>
+            <section class="modal-card-body">
+                <form id="register-form">
+
+                    <div class="field">
+                        <label class="label">Partícula: </label>
+                        <div class="control has-icons-left">
+                            <input class="input is-success" type="text" placeholder="Ingresa la partícula, puede ser un leptón, un hadrón o un fermión">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-bullseye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Carga eléctrica: </label>
+                        <div class="control has-icons-left">
+                            <input class="input is-success" type="text" placeholder="Ingresa la carga">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-bolt"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Masa: </label>
+                        <div class="control has-icons-left">
+                            <input class="input is-success" type="text" placeholder="Ingresa la masa">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-balance-scale"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Spin: </label>
+                        <div class="control has-icons-left">
+                            <input class="input is-success" type="text" placeholder="Ingresa el spin">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-retweet"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label class="label">Vida media: </label>
+                        <div class="control has-icons-left">
+                            <input class="input is-success" type="text" placeholder="Ingresa la vida media">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success">Guardar</button>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
