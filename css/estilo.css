@@ -40,7 +40,7 @@ body{
 
 .crud-conteiner{
     width: 55%;
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
     overflow: auto;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
@@ -55,7 +55,7 @@ body{
 
 .crud-conteiner h1{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .button span{
